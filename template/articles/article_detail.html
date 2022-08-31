@@ -1,0 +1,23 @@
+{% extends 'baselayout.html' %}
+
+{% block content %}
+    <div class="article_detail">
+        <div class="article">
+		    <div class="vid">
+            <video src="{{article.video.url }}"controls>
+            </div>
+			
+            </video>
+			<div class="p">
+            <h2>{{article.title}}</h2>
+			
+			<br/>
+			<label>DESCIPTION/BODY:<label>
+            <p id='body'>{{article.snippet}}</p>
+			
+            <p id='date'>{{article.date}}</p>
+			</div>
+			
+        </div>
+    </div>
+{% endblock %}
